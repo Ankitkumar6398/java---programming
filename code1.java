@@ -1,23 +1,16 @@
 public class code1 {
-        public static int removeDuplicates(int[] nums) {
-            int i = 0;
-            for(final int num:nums)
-                System.out.println(nums[i++]);
-
-                //if(i<1||num>nums[i-1])
-               //     nums[i++]=num;
-          //  System.out.println(num);
-
-
-            return i;
+         public static void Linear(int[] arr, int n){
+        for(int i = 0;i< arr.length;i++){
+            if(arr[i]==n){
+                System.out.println("Present");
+            break;}
         }
-
-
+    }
     public static void main(String[] args) {
-        int[] nums;
-        nums = new int[]{1, 1, 2};
-        /**System.out.println(**/ removeDuplicates(nums);
-
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = {2,4,1,4,54,65,23,45};
+        Linear(arr,n);
 
     }
 }
